@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+body {                  
     font-family: 'Poppins', sans-serif;
     background-color: #f4fdf4;
     color: #333;
@@ -25,6 +25,7 @@ body {
     font-size: 2rem;
     color: #1e4d2b;
     margin: 0;
+    text-align: center;
 }
 
 #cabecalho img {
@@ -136,4 +137,59 @@ body {
     background: #d4fcd4;
 }
 
+@media (max-width: 768px) {
+    #cabecalho {
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
 
+    #cabecalho h1 {
+        position: static;
+        transform: none;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #cabecalho img {
+        position: static;
+        transform: none;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .plantas-individual {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #informacoes-adicionais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre-a-iniciativa,
+    #sobre-a-turma {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #sobre-a-turma ul {
+        grid-template-columns: 1fr; /
+    }
+}
+
+@media (max-width: 480px) {
+    #cabecalho h1 {
+        font-size: 1.2rem;
+    }
+
+    .plantas-individual img {
+        height: 150px;
+    }
+
+    .plantas-individual h3 {
+        font-size: 1rem;
+    }
+}
