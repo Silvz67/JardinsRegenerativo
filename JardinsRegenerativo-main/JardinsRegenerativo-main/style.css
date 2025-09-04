@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {                  
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4fdf4;
+    color: #333;
+    line-height: 1.6;
+}
+
+#cabecalho {
+    position: relative;
+    background: linear-gradient(135deg, #a8e6a1, #99ec99);
+    height: 95px;
+}
+
+#cabecalho h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #1e4d2b;
+    margin: 0;
+    text-align: center;
+}
+
+#cabecalho img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: auto;
+}
+
+#plantas {
+    padding: 20px;
+    text-align: center;
+}
+
+#plantas h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.plantas-individual {
+    display: inline-block;
+    width: 240px;
+    margin: 10px;
+    border: solid 2px #57b14d;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.plantas-individual:hover {
+    transform: scale(1.05);
+}
+
+.plantas-individual img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    display: block;
+    height: 180px;
+    object-fit: cover;
+}
+
+.plantas-individual h3 {
+    padding: 10px;
+    font-weight: bold;
+}
+
+#informacoes-adicionais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#sobre-a-iniciativa,
+#sobre-a-turma {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+#sobre-a-iniciativa h2,
+#sobre-a-turma h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#sobre-a-turma ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#sobre-a-turma li {
+    background: #f4fdf4;
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#sobre-a-turma img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ver-sobre {
+    background: #a8e6a1;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #1e4d2b;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ver-sobre:hover {
+    background: #d4fcd4;
+}
+
+@media (max-width: 768px) {
+    #cabecalho {
+        height: auto;
+        padding: 15px;
+        max-height: 150px;
+        text-align: center;
+    }
+
+    #cabecalho h1 {
+        position: static;
+        transform: none;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #cabecalho img {
+        position: static;
+        transform: none;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .plantas-individual {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #informacoes-adicionais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre-a-iniciativa,
+    #sobre-a-turma {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #sobre-a-turma ul {
+        grid-template-columns: 1fr; /
+    }
+}
+
+@media (max-width: 480px) {
+    #cabecalho h1 {
+        font-size: 1.2rem;
+    }
+
+    .plantas-individual img {
+        height: 150px;
+    }
+
+    .plantas-individual h3 {
+        font-size: 1rem;
+    }
+}
