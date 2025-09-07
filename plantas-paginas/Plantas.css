@@ -84,4 +84,13 @@
     .rodape p {
         margin: 0;
         font-size: 1rem;
-    }           
+    }
+    .rodape a {
+        color: white;
+        text-decoration: none;
+    }
+    .rodape a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+          
