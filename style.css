@@ -130,6 +130,7 @@ body {
     border: none;
     border-radius: 6px;
     padding: 8px 12px;
+    margin-bottom: 5px;
     font-weight: bold;
     color: #1e4d2b;
     cursor: pointer;
